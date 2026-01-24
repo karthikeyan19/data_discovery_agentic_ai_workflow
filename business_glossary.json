@@ -1,0 +1,55 @@
+{
+  "entities": {
+    "party": "Canonical representation of a customer (person or organization) in the enterprise platform",
+
+    "subscription": "Represents an active telecom service connection such as a mobile line assigned to a customer",
+
+    "account": "Represents a billing account used for charging telecom services",
+
+    "party_identifier": "Stores all external and internal identifiers of a customer such as SSN, MSISDN, IMSI, and SIM",
+
+    "party_address_rel": "Defines the relationship between a customer and their addresses including home, billing, and office roles",
+
+    "kyc_verification": "Stores customer identity verification results required for regulatory compliance"
+  },
+
+  "columns": {
+    "party_id": "Canonical enterprise identifier for a customer",
+
+    "full_name": "Complete customer name constructed from first and last names",
+
+    "birth_date": "Customer date of birth",
+
+    "gender_cd": "Enterprise gender classification code",
+
+    "email": "Primary email address of the customer",
+
+    "ssn": "Customer social security number used for identity verification",
+
+    "id_type_cd": "Type of customer identifier such as SSN, Passport, Driver License, MSISDN, IMSI, or SIM",
+
+    "id_value": "Actual value of the customer identifier",
+
+    "msisdn": "Mobile phone number assigned to the customer subscription",
+
+    "imsi": "Unique network identifier of a SIM card",
+
+    "sim_serial": "Physical serial number of a SIM card",
+
+    "plan_cd": "Enterprise service plan identifier defining tariff and benefits",
+
+    "service_status_cd": "Lifecycle state of the telecom service such as Active, Suspended, or Terminated",
+
+    "billing_cycle_cd": "Billing frequency of the account such as monthly or quarterly",
+
+    "payment_method_cd": "Enterprise payment method classification such as credit card, bank transfer, or cash",
+
+    "credit_risk_cd": "Enterprise financial risk classification of the customer",
+
+    "account_status_cd": "Lifecycle state of the billing account such as open, suspended, or closed",
+
+    "address_role_cd": "Role of the address for a customer such as home, billing, or office",
+
+    "verification_status_cd": "KYC verification result such as verified, pending, or rejected"
+  }
+}
