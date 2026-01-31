@@ -230,10 +230,30 @@ JOIN lookup_mapping mapping ON sl.source_value = mapping.source_value
 
 **Example**:
 ```
-Source Status → Target Status
-'ACTIVE'      → '1'
-'INACTIVE'    → '0'
-'PENDING'     → '2'
+[1] SOURCE LOOKUP TABLE:
+  code description
+0  ACT      Active
+1  INA    Inactive
+2  SUS   Suspended
+3  TRM  Terminated
+
+[2] TARGET LOOKUP TABLE:
+  code      description
+0    A    Active Status
+1    I  Inactive Status
+2    S          On Hold
+3    D      Deactivated
+4    T       Terminated
+
+[3] Running lookup mapping agent...
+
+[OK] Mapping completed!
+
+[MAPPINGS]:
+  ACT -> A (confidence: 0.95)
+  INA -> I (confidence: 0.95)
+  SUS -> S (confidence: 0.75)
+  TRM -> T (confidence: 0.95)
 ```
 
 **Process**:
